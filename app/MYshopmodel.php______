@@ -1,0 +1,24 @@
+<?php
+
+namespace App;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+class MYshopmodel extends Model
+{
+    
+    
+    public function getShopdata($shop_name){
+        // = Session::get('myOshop');
+        $res_data = DB::table('users')->where('name',$shop_name)->first();
+        return $res_data;
+    }
+    
+    public function test(){
+      // Session::put('myname',$shop_name);
+        $data = Session::get('myOshop');
+        return $data;
+    }
+    
+   
+}

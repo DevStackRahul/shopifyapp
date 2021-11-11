@@ -1,0 +1,844 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,800');
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  text-align: center;
+  margin: 0 auto;
+}
+.loader span {
+  padding: 9px 14px;
+  background: #3B5998;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+}
+
+
+ul.tabs {
+  border-bottom: 1px solid #DDDDDD;
+  display: block;
+  margin: 0 0 20px;
+  padding: 0;
+}
+ul.tabs li {
+  display: block;
+  float: left;
+  height: 30px;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+}
+ul.tabs li a {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border-color: #DDDDDD !important;
+  border-style: solid;
+  border-width: 1px 1px 0 1px;
+  display: block;
+  font-size: 13px;
+  height: 29px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 20px;
+  text-decoration: none;
+  width: auto;
+  color: #303030;
+  border-bottom:none !important;
+}
+ul.tabs li a.active {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-left-width: 1px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: #111111;
+  height: 30px;
+  margin: 0 0 0 -1px;
+  padding-top: 4px;
+  position: relative;
+  top: -4px;
+}
+ul.tabs li:first-child a.active {
+  margin-left: 0;
+}
+ul.tabs li:first-child a {
+  border-top-left-radius: 2px;
+  border-width: 1px 1px 0;
+}
+ul.tabs li:last-child a {
+  border-top-right-radius: 2px;
+}
+ul.tabs:before, ul.tabs:after {
+  content: " ";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+ul.tabs:after {
+  clear: both;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hideform {
+    display: none;
+}
+
+.hideeform {
+    display: none;
+}
+
+main {
+    margin-top: 10px;
+}
+
+main .menu-itemss {
+    margin: 0 6px;
+    background-color: #000;
+}
+
+a.menu-items-pg {
+    padding: 20px 27px 15px !important;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border-right: 2px solid #828282;
+    border-bottom: 5px solid #3b599800;
+}
+
+a.active.menu-items-pg {
+    border-bottom-color: #3B5998;
+}
+
+main .Reviewtab {
+    max-width: 850px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+}
+
+main .Reviewtab .optiondesing {
+    display: flex;
+    
+    transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
+    transition-delay: .1s;
+    border-radius: var(--p-border-radius-wide, inherit);
+    box-shadow: var(--p-banner-border, inset 0 3px 0 0 var(--p-border, #637381), inset 0 0 0 0 transparent, 0 0 0 1px rgba(63, 63, 68, .05), 0 1px 3px 0 rgba(63, 63, 68, .15));
+    background-color: var(--p-banner-background, #f4f6f8);
+    position: relative;
+    padding: 15px;
+}
+
+.optiondesing .flagdata,
+.optiondesing p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.optiondesing span.flag {
+    color: var(--p-surface, #fff);
+    background: #63738126;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px !important;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 6px;
+}
+
+#main-container .Reviewtab svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 8px;
+}
+
+.flagdata span.flag svg.v3ASA {
+    fill: #637381;
+}
+
+.optiondesing span.flag svg {
+    position: relative;
+    left: -5px;
+    top: 1px !important;
+}
+
+main .Reviewtab svg {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 5px;
+    margin-left: 8px;
+}
+
+.flagdata {
+    padding-right: 1.6rem;
+}
+
+
+span#suggestion,
+span#addreview {
+    position: relative;
+    top: -1px;
+    padding-right: 12px;
+}
+
+span#suggestion p,
+span#addreview p {
+    text-decoration: underline;
+    text-align: center;
+}
+
+span#suggestion p,
+span#addreview p {
+    padding: 0;
+}
+
+.optiondesing .flagdata,
+.optiondesing p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Reviewtab button.closereview {
+    position: absolute;
+    right: 0;
+    background: transparent;
+    border: 0;
+    top: 13px;
+    right: 10px;
+    color: #637381;
+}
+
+.optiondesing p {
+    margin: 6px 0;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.showPixelCode {
+    display: block;
+    border-width: 0;
+    padding: 1em 1.4em;
+    background: none;
+}
+
+table#showPixelC thead {
+    background-color: #3B5998;
+}
+
+#showPixelC thead th,
+#showTags thead th {
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+}
+
+th:first-child {
+    width: 40%;
+}
+
+th {
+    padding: 12px 20px;
+    line-height: unset;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+table#showPixelC {
+    border-collapse: collapse;
+}
+
+table#showPixelC {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+}
+
+#showPixelC thead th,
+#showTags thead th {
+    font-size: 20px;
+    font-weight: 600;
+    border: 0;
+}
+
+.editPixelCode tr:nth-child(2n+1) td:nth-child(2n+0),
+.editProductTags tr:nth-child(2n+1) td:nth-child(2n+0) {
+    background-color: #cfe3f7 !important;
+}
+
+.editPixelCode td:nth-child(2),
+.editProductTags td:nth-child(2) {
+    padding-left: 20px;
+}
+
+.editPixelCode td:nth-child(2n+1),
+.editProductTags td:nth-child(2n+1) {
+    background-color: #cfe3f7;
+}
+
+td a {
+    width: 50%;
+    float: left;
+    background-color: #c5ced6;
+    height: 100%;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.editPixelCode tr:nth-child(even) td:first-child,
+.editPixelCode tr:nth-child(even) td:first-child input,
+.editProductTags tr:nth-child(even) td:first-child,
+.editProductTags tr:nth-child(even) td:first-child input {
+    background: #f4f6f8 !important;
+}
+
+.editPixelCode td:nth-child(2),
+.editProductTags td:nth-child(2) {
+    padding-left: 20px;
+}
+
+.editPixelCode td,
+#product_tag td {
+    background-color: #f4f6f8;
+    border-bottom: 0;
+    border-top: 0;
+    margin: 0;
+}
+
+td a {
+    width: 50%;
+    float: left;
+    background-color: #c5ced6;
+    height: 100%;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+}
+
+tr td:nth-child(2) {
+    padding: 0 15px;
+}
+
+button#showpixleform {
+    margin: 0 0px 1em 1.6em;
+    border-radius: 21px;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px 40px;
+    background-color: #000;
+    border: 0;
+    color: #fff !important;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.buttons-pixel input#saveEditPixel {
+    border-radius: 21px;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px 53px;
+    background-color: #3B5998;
+    border: 0;
+    color: #fff;
+    line-height: 30px;
+}
+
+#accordion h3 {
+    color: #000;
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    position: relative;
+}
+
+#accordion {
+    padding: 1em 1.4em;
+}
+
+.ui-accordion-content p {
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+
+.video-instruction-main {
+    padding: 1em 1.4em;
+}
+
+form.contact-form {
+    padding: 1.8em 1.4em;
+}
+
+form.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+form.contact-form .form-group label {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100% !important;
+    border-radius: 0 !important;
+    height: 34px !important;
+    padding: 6px 12px !important;
+    box-sizing: border-box !important;
+    line-height: 1.42857143 !important;
+    border: 1px solid #e2e4ec !important;
+}
+
+.form-group textarea {
+    height: 54px;
+}
+
+td a.delete_pixel {
+    background-color: #dfe3e8;
+}
+
+input#sendEmail {
+    border-radius: 21px;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 6px 53px;
+    background-color: #3B5998;
+    border: 0;
+    color: #fff;
+    line-height: 30px;
+}
+
+.ui-accordion-header-active,
+.ui-state-hover,
+h3.ui-accordion-header:hover {
+    background: #3B5998 !important;
+    border: #3B5998 !important;
+    color: #fff !important;
+}
+
+#accordion h3 span.ui-accordion-header-icon {
+    display: none;
+}
+
+#accordion h3.ui-accordion-header-active:after {
+    content: " ";
+    background-image: url(http://www.3ginfo.in/laravelwish/resources/css/images/minus-white.png);
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 5px;
+    transform: translateY(-50%);
+    height: 5px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+
+#accordion h3:after {
+    content: " ";
+    background-image: url(http://www.3ginfo.in/laravelwish/resources/css/images/add-black.png);
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 5px;
+    transform: translateY(-50%);
+    height: 5px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+
+
+#accordion h3.ui-state-hover:after,
+#accordion h3.ui-accordion-header:hover:after {
+    content: " ";
+    background-image: url(http://www.3ginfo.in/laravelwish/resources/css/images/add-white.png);
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    width: 5px;
+    transform: translateY(-50%);
+    height: 5px;
+    padding: 5px 5px;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.form-group input {
+    font-weight: 700;
+}
+
+form#suggestion input#suggestionissue,
+form#suggestion textarea {
+    box-sizing: border-box;
+}
+
+.center,
+.showpixleEditform,
+.suggestionPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hideform {
+    display: none !important;
+}
+
+/* 
+.center .pixel-pop {
+    margin: auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #fff;
+} */
+
+.pixel-pop {
+    width: 100%;
+}
+
+.pixel-pop .PixelPopup-inner {
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+}
+
+.pixel-pop .PixelPopup-inner button {
+    background-color: transparent;
+    border: 0;
+    font-weight: 900;
+    color: #fff;
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+
+
+.popupForm h4.heading {
+    margin-bottom: 30px;
+    background-color: #232222;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    margin-top: 0;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.pixel-pop .PixelPopup-inner {
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-group.first {
+    padding-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+}
+
+.form-group input {
+    border: 1px solid #beccda !important;
+    border-radius: 4px !important;
+    height: 40px;
+    box-shadow: unset !important;
+    color: #1d2e41 !important;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+}
+
+.form-group select {
+    border: 1px solid #beccda !important;
+    border-radius: 4px !important;
+    height: 40px;
+    box-shadow: unset !important;
+    color: #1d2e41 !important;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    background-image: none;
+}
+
+.popupForm input.btn.btn-default {
+    border-radius: 21px;
+    font-weight: bold;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1;
+    padding: 6px 53px;
+    background-color: #3B5998;
+    border: 0;
+    color: #fff;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+main .Reviewtab .optiondesing span {
+    cursor: pointer;
+}
+
+.suggestionPopup-inner {
+    background: #fff;
+    max-width: 550px;
+    padding: 20px 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    text-align: center;
+}
+
+.popup_close,
+.tagpopup_close {
+    float: right;
+}
+
+.popup_close .fa,
+.tagpopup_close .fa {
+    font-size: 15px;
+    font-weight: 400;
+    color: #beccdb;
+}
+
+form#suggestion {
+    text-align: left;
+}
+
+.suggestionpopupForm form h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.suggestionpopupForm form .form-group {
+    margin-top: 20px !important;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.suggestionpopupForm .form-group label {
+    margin-bottom: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.suggestionpopupForm input,
+.suggestionpopupForm textarea {
+    border: 1px solid #b5b5b5 !important;
+    border-radius: 0 !important;
+}
+
+input#suggestion2 {
+    border-radius: 30px !important;
+    padding: 12px 50px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 0;
+    background: #00a1ff;
+}
+
+form#suggestion p {
+    font-size: 13px;
+}
+
+.suggestionpopupForm textarea {
+    height: 100px;
+    width: 100%;
+}
+
+input.form-control.editpixel_fields {
+    background-color: transparent !important;
+    border: 0;
+    padding: 14px 20px !important;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+td select {
+    padding: 7px 20px;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+.feedback_messagebox .feedback_messagebox_icon {
+    width: 25px;
+    float: left;
+}
+
+.feedback_messagebox_icon+div {
+    width: 90%;
+    float: left;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.feedback_messagebox_icon+div .feedback_messagebox_text p {
+    font-size: 17px !important;
+    color: #000;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    letter-spacing: -1px;
+}
+
+.feedback_messagebox_icon+div .feedbackmessage {
+    color: #000;
+    font-size: 14px;
+    line-height: 1.42857143;
+}
+
+form#suggestion .alert.alert-success {
+    transition: box-shadow .2s cubic-bezier(.64, 0, .35, 1);
+    transition-delay: .1s;
+    box-shadow: inset 0 3px 0 0 #50b83c, inset 0 0 0 0 transparent, 0 0 0 1px rgb(63 63 68 / 5%), 0 1px 3px 0 rgb(63 63 68 / 15%);
+    background-color: #eff7ed;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border-radius: 0;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+}
+
+form#suggestion .alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.feedback_messagebox_icon svg {
+    color: #fff;
+    position: relative;
+    top: 3px;
+    border: 4px solid rgba(80, 184, 60, 0.25);
+    border-radius: 20px;
+    width: 20px;
+}
+
+.feedback_messagebox_icon svg g {
+    fill: #50b83c;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus,
+form#suggestion input#suggestionissue:focus,
+form#suggestion textarea:focus {
+    border-color: #66afe9!important;
+    outline: 0!important;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%)!important;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%)!important;
+}
+#accordion {
+   
+    padding: 1em 1.4em;
+}
+
+#accordion h3.ui-accordion-header-active{
+    margin-bottom: 0!important;
+    border-radius: 3px 3px 0 0;
+    border: #3B5998 !important;
+}
+
+#accordion h3 {
+    color: #000;
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #c5c5c5;
+    background: #f6f6f6;
+    position: relative;
+    border-radius: 3px;
+}
+
+
+#accordion .panel {
+    border: 1px solid #dddddd;
+    border-top: 0;
+    padding: 1em 2.2em;
+    display: none;
+}
